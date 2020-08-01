@@ -12,7 +12,7 @@ class Characters {
         let htmlContent = '';
 
         data.forEach(({ name, thumbnail: { path, extension } }) => {
-            const imgSrc = path + IMG_STANDARD_XLARGE + "." + extension;
+            const imgSrc = path + '/' + IMG_STANDARD_XLARGE + '.' + extension;
 
             htmlContent += `
                 <li class="characters__item">
