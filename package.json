@@ -1,15 +1,14 @@
 {
-	"name": "marvel",
-	"version": "1.0.0",
-	"scripts": {
-		"start": "parcel public/index.html --open",
-		"build": "parcel build public/index.html"
-	},
-	"dependencies": {
-		"axios": "^0.19.2"
-	},
-	"devDependencies": {
-		"parcel-bundler": "^1.12.4",
-		"postcss-modules": "^3.2.0"
-	}
+  "name": "marvel",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "build": "parcel build public/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }
