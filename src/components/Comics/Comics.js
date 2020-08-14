@@ -1,5 +1,5 @@
 import { getDataApi } from '../../utils/getDataApi';
-import { API_URL, URL_COMICS, URL_CHARACTERS, IMG_STANDARD_XLARGE } from '../../constants/api';
+import { API_URL, URL_COMICS, URL_CHARACTERS, IMG_STANDARD_XLARGE, IMG_NOT_AVAILABLE } from '../../constants/api';
 import { ROOT_INDEX } from '../../constants/root';
 
 import Characters from '../Characters';
@@ -12,10 +12,10 @@ class Comics {
 		let htmlContent = '';
 
 		data.forEach(({ id, title, thumbnail: { path, extension } }) => {
-			const uri = API_URL + URL_COMICS + '/' + id + '/' + URL_CHARACTERS;
 
-			if (path.lastIndexOf('image_not_available') === -1) {
+			if (path.lastIndexOf(IMG_NOT_AVAILABLE) === -1) {
 				const imgSrc = path + '/' + IMG_STANDARD_XLARGE + '.' + extension;
+				const uri = API_URL + URL_COMICS + '/' + id + '/' + URL_CHARACTERS;
 
 				htmlContent += `
 					<li class="comics__item ${classes.comics__item}" data-uri="${uri}">
