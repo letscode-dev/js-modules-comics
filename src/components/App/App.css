@@ -12,7 +12,7 @@
 	--box-shadow-gray: 0 2px 24px rgba(168, 175, 196, 0.5);
 }
 
-*, :after, :before {
+*, ::after, ::before {
     box-sizing: border-box;
 }
 
