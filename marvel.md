@@ -1,8 +1,7 @@
 
-//-----------------------------------------------
-# css
-//-----------------------------------------------
+## css
 
+```css
 :root {
 	--color-orange: #ffa500;
 
@@ -13,12 +12,11 @@
 
 	--spacing-small: 10px;
 }
+```
 
+## package.json
 
-//-----------------------------------------------
-# package.json
-//-----------------------------------------------
-
+```json
 {
 	"name": "marvel",
 	"version": "1.0.0",
@@ -35,14 +33,13 @@
 		"parcel-bundler": "^1.6.1"
 	}
 }
+```
 
+## api
 
-//-----------------------------------------------
-# api
-//-----------------------------------------------
+- https://developer.marvel.com/docs
 
-// https://developer.marvel.com/docs
-
+```js
 export const API_KEY = 'a5837db97d72016c81a7a776f4240db9';
 
 const API_URL = 'https://gateway.marvel.com/v1/public/';
@@ -56,8 +53,9 @@ export const URL_STORIES = API_URL + 'stories';
 
 export const IMG_STANDARD_XLARGE = '/standard_xlarge';
 export const IMG_STANDARD_SMALL = '/standard_small';
+```
 
-
+```js
 // 'comics/'+url
 // 'comics/'+url+'/characters'
 // 'characters/'+id
@@ -73,5 +71,4 @@ export const IMG_STANDARD_SMALL = '/standard_small';
     // &noVariants=true
     // &characters=1009187
     // &offset=0
-
-
+```
