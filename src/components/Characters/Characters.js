@@ -2,7 +2,7 @@ import { getDataApi } from '../../utils/getDataApi';
 import { IMG_STANDARD_XLARGE } from '../../constants/api';
 import { ROOT_MODAL } from '../../constants/root';
 
-import './Characters.css';
+import classes from './Characters.css';
 
 import imgCloseWhite from './img/close-white.svg';
 import imgCloseBlack from './img/close-black.svg';
@@ -15,20 +15,20 @@ class Characters {
             const imgSrc = path + '/' + IMG_STANDARD_XLARGE + '.' + extension;
 
             htmlContent += `
-                <li class="characters__item">
-                    <img class="img-cover characters__image" src="${imgSrc}" />
-                    <span class="characters__name">${name}</span>
+                <li class="${classes.characters__item}">
+                    <img class="img-cover ${classes.characters__img}" src="${imgSrc}" />
+                    <span class="${classes.characters__name}">${name}</span>
                 </li>
             `;
         });
 
         const htmlWrapper = `
-            <div class="characters">
-                <ul class="characters__container">
+            <div class="${classes.wrapper}">
+                <ul class="${classes.characters__container}">
                     ${htmlContent}
                 </ul>
                 <button
-                    class="btn bg-contain characters__close"
+                    class="btn bg-contain ${classes.characters__close}"
                     onclick="modal.innerHTML = ''"
                     style="background-image: url(${imgCloseWhite})"
                 ></button>
@@ -40,10 +40,10 @@ class Characters {
 
     renderNotification() {
         const htmlWrapper = `
-            <div class="characters-alert">
+            <div class="${classes.alert}">
                 <span>Нет контента</span>
                 <button
-                    class="btn bg-contain characters-alert__close"
+                    class="btn bg-contain ${classes.alert__close}"
                     onclick="modal.innerHTML = ''"
                     style="background-image: url(${imgCloseBlack})"
                 ></button>

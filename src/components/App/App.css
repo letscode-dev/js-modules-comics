@@ -42,22 +42,22 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-.img-contain {
+:global(.img-contain) {
+    display: block;
+    object-fit: contain;
+	object-position: center;
+}
+:global(.img-cover) {
     display: block;
     object-fit: contain;
     object-position: center;
 }
-.img-cover {
-    display: block;
-    object-fit: contain;
-    object-position: center;
-}
-.bg-contain {
+:global(.bg-contain) {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+	background-position: center center;
 }
-.btn {
+:global(.btn) {
     border: none;
     outline: none;
     background: none;

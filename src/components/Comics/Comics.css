@@ -21,6 +21,6 @@
 	margin: auto;
 	padding: var(--spacing-small) var(--spacing-medium);
 }
-.comics__image {
+.comics__img {
 	width: 100%;
 }

@@ -1,4 +1,4 @@
-.characters {
+.wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,6 +6,7 @@
     height: 100vh;
     backdrop-filter: blur(3px);
 }
+
 .characters__container {
     position: fixed;
     top: 0;
@@ -34,7 +35,7 @@
     box-shadow: var(--box-shadow-gray);
     background-color: var(--color-white);
 }
-.characters__image {
+.characters__img {
     width: 100%;
 }
 .characters__name {
@@ -55,7 +56,7 @@
     height: 35px;
 }
 
-.characters-alert {
+.alert {
     position: fixed;
     bottom: var(--spacing-large);
     left: var(--spacing-large);
@@ -65,7 +66,7 @@
     border: 1px solid var(--color-black);
     background-color: var(--color-white);
 }
-.characters-alert__close {
+.alert__close {
     display: flex;
     justify-content: center;
     align-items: center;
