@@ -1,26 +1,26 @@
 .comics__container {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .comics__item {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 250px;
-	margin: var(--spacing-large);
-	transition: 0.5s;
-	background-color: var(--color-light);
-	cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin: var(--spacing-large);
+    transition: 0.5s;
+    background-color: var(--color-light);
+    cursor: pointer;
 }
 .comics__item:hover {
-	transform: rotate(-3deg) scale(0.95);
-	filter: saturate(150%);
+    transform: rotate(-3deg) scale(0.95);
+    filter: saturate(150%);
 }
 .comics__name {
-	display: flex;
-	margin: auto;
-	padding: var(--spacing-small) var(--spacing-medium);
+    display: flex;
+    margin: auto;
+    padding: var(--spacing-small) var(--spacing-medium);
 }
 .comics__img {
-	width: 100%;
+    width: 100%;
 }
