@@ -1,14 +1,14 @@
 import { ROOT_INDEX } from '../../constants/root';
 
-import './Error.css';
+import classes from './Error.css';
 
 class Error {
 	render() {
         const htmlWrapper = `
-            <div class="error__container">
+            <div class="${classes.error__container}">
                 <span>
-                    <p class="error__alert">Произошла ошибка.</p>
-                    <p class="error__alert">Попробуйте зайти позже</p>
+                    <p class="${classes.error__alert}">Произошла ошибка.</p>
+                    <p class="${classes.error__alert}">Попробуйте зайти позже</p>
                 </span>
             </div>
         `;
