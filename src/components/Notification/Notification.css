@@ -9,9 +9,6 @@
     background-color: var(--color-white);
 }
 .notification__close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 30px;
     height: 30px;
     margin-left: var(--spacing-large);
