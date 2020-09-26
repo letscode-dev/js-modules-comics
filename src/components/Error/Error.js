@@ -3,7 +3,7 @@ import { ROOT_INDEX } from '../../constants/root';
 import classes from './Error.css';
 
 class Error {
-	render() {
+    render() {
         const htmlWrapper = `
             <div class="${classes.error__container}">
                 <span>

@@ -4,9 +4,9 @@ import { ROOT_MODAL } from '../../constants/root';
 
 import Notification from '../Notification';
 
-import classes from './Characters.css';
-
 import imgCloseWhite from './img/close-white.svg';
+
+import classes from './Characters.css';
 
 class Characters {
     renderContent(data) {
@@ -14,7 +14,7 @@ class Characters {
 
         data.forEach(({ name, thumbnail: { path, extension } }) => {
             const imgSrc = path + '/' + IMG_STANDARD_XLARGE + '.' + extension;
-
+            
             htmlContent += `
                 <li class="${classes.characters__item}">
                     <img class="img-cover ${classes.characters__img}" src="${imgSrc}" />
