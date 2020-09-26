@@ -6,7 +6,6 @@
     height: 100vh;
     backdrop-filter: blur(3px);
 }
-
 .characters__container {
     position: fixed;
     top: 0;
@@ -53,23 +52,4 @@
     align-items: center;
     width: 35px;
     height: 35px;
-}
-
-.alert {
-    position: fixed;
-    bottom: var(--spacing-large);
-    left: var(--spacing-large);
-    display: flex;
-    align-items: center;
-    padding: var(--spacing-medium) var(--spacing-large);
-    border: 1px solid var(--color-black);
-    background-color: var(--color-white);
-}
-.alert__close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin-left: var(--spacing-large);
 }

@@ -2,10 +2,11 @@ import { getDataApi } from '../../utils/getDataApi';
 import { IMG_STANDARD_XLARGE } from '../../constants/api';
 import { ROOT_MODAL } from '../../constants/root';
 
+import Notification from '../Notification';
+
 import classes from './Characters.css';
 
 import imgCloseWhite from './img/close-white.svg';
-import imgCloseBlack from './img/close-black.svg';
 
 class Characters {
     renderContent(data) {
@@ -38,25 +39,10 @@ class Characters {
         ROOT_MODAL.innerHTML = htmlWrapper;
     }
 
-    renderNotification() {
-        const htmlWrapper = `
-            <div class="${classes.alert}">
-                <span>Нет контента</span>
-                <button
-                    class="btn bg-contain ${classes.alert__close}"
-                    onclick="modal.innerHTML = ''"
-                    style="background-image: url(${imgCloseBlack})"
-                ></button>
-            </div>
-        `;
-
-        ROOT_MODAL.innerHTML = htmlWrapper;
-    }
-
     async render(uri) {
         const data = await getDataApi.getData(uri);
 
-        data.length ? this.renderContent(data) : this.renderNotification();
+        data.length ? this.renderContent(data) : Notification.render();
     }
 }
 
