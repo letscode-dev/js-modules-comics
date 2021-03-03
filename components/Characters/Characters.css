@@ -1,0 +1,25 @@
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.characters-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: var(--spacing-medium);
+  cursor: pointer;
+  transition: 0.4s;
+  width: 200px;
+}
+.characters-item:hover {
+  filter: grayscale(50%);
+}
+.characters-name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.characters-image {
+  width: 100%;
+}

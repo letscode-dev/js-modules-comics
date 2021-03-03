@@ -1,15 +1,18 @@
 {
-	"name": "marvel",
+	"name": "marvel-api",
 	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
 	"scripts": {
-		"start": "parcel public/index.html --open",
-		"build": "parcel build public/index.html"
+		"start": "parcel index.html --open",
+		"build": "parcel build index.html"
 	},
 	"dependencies": {
-		"axios": "^0.19.2"
+		"axios": "0.19.0"
 	},
 	"devDependencies": {
-		"parcel-bundler": "^1.12.4",
-		"postcss-modules": "^3.2.0"
-	}
+		"@babel/core": "7.2.0",
+		"parcel-bundler": "^1.6.1"
+	},
+	"keywords": []
 }

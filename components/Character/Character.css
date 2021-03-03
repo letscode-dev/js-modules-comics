@@ -1,0 +1,40 @@
+.character__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+.character__container {
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 440px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    color: var(--color-black);
+    overflow: auto;
+    display: grid;
+    grid-gap: 10px 30px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+        "img name"
+        "img description";
+}
+.character__container_img {
+    grid-area: img;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+.character__container_name {
+    grid-area: name;
+}
+.character__container_description {
+    grid-area: description;
+}
